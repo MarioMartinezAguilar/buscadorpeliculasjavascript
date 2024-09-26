@@ -1,0 +1,91 @@
+
+body{
+    background-color:rgb(20, 20, 20);
+    font-family: "Poppins";
+    color: white
+  
+    
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+.neon-text{
+  font-family: "Poppins";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  cursor: pointer;
+  transition: .2s linear;
+  color:transparent;
+  -webkit-text-stroke:2px red;
+  background-image: linear-gradient(to left, red, rgb(266,33,33),black, rgb(35,31,31));
+  background-size: 200%;
+  background-clip:text;
+  animation: move 30s linear infinite;
+  
+} 
+@keyframes move{
+  100%{
+    background-position: 2000px 0;
+  }
+
+}
+.neon-text:hover{
+  color: rgb(35, 253, 6);
+  text-shadow: 0 0 10px rgba(255, 0, 0, .7),
+               0 0 20px rgba(255, 0, 0, .7),
+               0 0 40px rgba(255, 0, 0, .7),
+               0 0 80px rgba(255, 0, 0, .7),
+               0 0 160px rgba(255, 0, 0, .7),
+               0 0 320px rgba(255, 0, 0, .7);
+
+} 
+  input[type="text"] {
+    width: 350px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #fa0303;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #results {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .movie {
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fdfafa;
+    border-radius: 7px;
+    color:black;
+  }
+  
+  .movie img {
+    width: 100px;
+    float: left;
+    margin-right: 10px;
+  }
+  
+  .movie h2 {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  
+  .movie p {
+    margin: 5px 0;
+    color:black
+  }
+  
